@@ -7,39 +7,41 @@ import java.util.Scanner;
 public class Ejercicio9 {
     public static void main(String[] args) {
 
-        int selOpt;
-        boolean close = false;
+        String mainOption;
+        boolean exit = false;
 
         Agenda agenda = new Agenda();
         agenda.readList();
 
-        while (!close) {
-            selOpt = agenda.showMainMenu();
-            switch (selOpt) {
-                case 1:
+        while (!exit) {
+            mainOption = agenda.showMainMenu();
+            System.out.println();
+            switch (mainOption) {
+                case "1":
                     agenda.newContact();
                     break;
-                case 2:
+                case "2":
                     agenda.deleteContact();
                     break;
-                case 3:
+                case "3":
                     agenda.showContact();
                     break;
-                case 4:
+                case "4":
                     agenda.modifyContact();
                     break;
-                case 5:
+                case "5":
                     agenda.showList();
+                    agenda.pause();
                     break;
-                case 6:
+                case "6":
                     agenda.deleteAll();
                     break;
-                case 7:
+                case "7":
                     agenda.saveList();
-                    close = true;
+                    exit = true;
                     break;
-                case 8:
-                    close = true;
+                case "8":
+                    exit = true;
                     break;
                 default:
                     System.out.println("OPCION NO VALIDA.");
