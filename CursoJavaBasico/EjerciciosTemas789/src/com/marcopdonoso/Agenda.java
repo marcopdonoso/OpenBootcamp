@@ -2,6 +2,7 @@ package com.marcopdonoso;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
@@ -16,21 +17,53 @@ public class Agenda {
     public void pause() {
         String pressEnter;
         do {
-            System.out.println("PRESIONE ENTER PARA VOLVER AL MENU PRINCIPAL");
+            System.out.print("PRESIONE ENTER PARA VOLVER AL MENU PRINCIPAL");
             pressEnter = scanner.nextLine();
         } while (!pressEnter.equals(""));
     }
 
     public void saveList() {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream("/Users/marcopdonoso/personalProjects/OpenBootcamp/CursoJavaBasico/EjerciciosTemas789/agenda.properties");
+            try {
+                properties.clear();
+                properties.store(fileOutputStream,null);
+                properties.putAll(contactList);
+                properties.store(fileOutputStream,null);
+                fileOutputStream.close();
+                System.out.println("TODOS LOS CAMBIOS EN LA AGENDA FUERON ALMACENADOS CON EXITO");
+                pause();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public void deleteAll() {
+        String entry;
+        System.out.println();
+        System.out.println("CONFIRME QUE DESEA BORRAR TODA LA AGENDA");
+        System.out.println("-> ESCRIBA: SI");
+        System.out.println("PARA ELIMINAR TODOS LOS CONTACTOS DE LA AGENDA");
+        System.out.print("-> ");
+        entry = scanner.nextLine();
+        if (entry.equals("SI")) {
+            System.out.println("TODOS LOS CONTACTOS FUERON ELIMINADOS");
+            contactList.clear();
+        } else {
+            System.out.println("OPCION NO VALIDA");
+        }
+        System.out.println();
+        pause();
     }
 
     public void showList() {
         for (String key : contactList.keySet()) {
             System.out.println("Nombre: " + contactList.get(key) + " - Telefono: " + key);
         }
+        System.out.println();
     }
 
     public void modifyContact() {
@@ -53,7 +86,7 @@ public class Agenda {
                 System.out.println("# DE TELEFONO MODIFICADO EXITOSAMENTE");
                 System.out.println();
             }
-            System.out.print("Desea modificar el nombre? (Y/N)");
+            System.out.print("Desea modificar el nombre? (Y/N): ");
             option = scanner.nextLine();
             if (option.equals("Y") || option.equals("y")) {
                 System.out.print("INTRODUZCA EL NUEVO NOMBRE PARA EL # " + phoneNumber + ": ");
@@ -72,16 +105,38 @@ public class Agenda {
         String option;
         String name;
         String phoneNumber;
+
         System.out.println();
         System.out.print("DESEA BUSCAR POR NOMBRE (1) O POR # DE TELEFONO (2)?: ");
         option = scanner.nextLine();
+
         if (option.equals("1")) {
             System.out.print("INTRODUZCA EL NOMBRE DEL CONTACTO: ");
             name = scanner.nextLine();
             if (contactList.containsValue(name)) {
-                System.out.println("Nombre: " + name + " - Telefono: "); // Resolver lista de claves recorriendo con getKey y llenando un Array.
+                System.out.println("*** LISTA DE #'s TELEFONICOS QUE COINCIDEN CON LA BUSQUEDA ***");
+                for (String key : contactList.keySet()) {
+                    if (contactList.get(key).equals(name)) {
+                        System.out.println(key);
+                    }
+                }
+            } else {
+                System.out.println("EL CONTACTO NO EXISTE EN LA AGENDA");
             }
+        } else if (option.equals("2")) {
+            System.out.print("INTRODUZCA EL # DE TELEFONO QUE DESEA BUSCAR: ");
+            phoneNumber = scanner.nextLine();
+            if (contactList.containsKey(phoneNumber)) {
+                System.out.println("*** CONTACTO ENCONTRADO ***");
+                System.out.println(contactList.get(phoneNumber));
+            } else {
+                System.out.println("EL # TELEFONICO NO EXISTE EN LA AGENDA");
+            }
+        } else {
+            System.out.println("OPCION NO VALIDA");
         }
+        System.out.println();
+        pause();
     }
 
     public void deleteContact() {
@@ -147,6 +202,7 @@ public class Agenda {
                 for (String key : properties.stringPropertyNames()) {
                     contactList.put(key,properties.get(key).toString());
                 }
+                fileInputStream.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }

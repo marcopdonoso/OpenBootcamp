@@ -2,8 +2,6 @@
 
 package com.marcopdonoso;
 
-import java.util.Scanner;
-
 public class Ejercicio9 {
     public static void main(String[] args) {
 
@@ -38,7 +36,6 @@ public class Ejercicio9 {
                     break;
                 case "7":
                     agenda.saveList();
-                    exit = true;
                     break;
                 case "8":
                     exit = true;
