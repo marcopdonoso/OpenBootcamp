@@ -16,6 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import include
+from django.views.generic import RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('catalog/', include('catalog.urls')),  # Redireccion de peticiones con patron catalog/ al modulo catalog.urls
+    path('', RedirectView.as_view(url='/catalog/', permanent=True)),  # Redireccion de la URL raiz a la URL /catalog/
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Habilitacion de servicio de ficheros estaticos en el server de desarrollo de Django
+
+
