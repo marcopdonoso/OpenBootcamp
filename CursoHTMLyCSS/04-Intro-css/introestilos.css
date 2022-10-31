@@ -26,3 +26,23 @@
     background-image: url("./imagenes/blend-mode-example-screenshot.png");
     background-position: center center;
 }
+
+/* Tamaños */
+.ancho {
+    background-color: #BCE784;
+    width: 100px;
+}
+
+.alto {
+    background-color: aquamarine;
+    height: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 5px;
+    /* border-top: none; */
+    padding: 10px 20px;
+    margin: 20px 100px;
+}
