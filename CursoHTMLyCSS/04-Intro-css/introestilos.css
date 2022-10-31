@@ -1,0 +1,16 @@
+/* Estilos para colores */
+.colores {
+    color: orangered;
+}
+
+.color-hexadecimal {
+    color: #FFB400;
+}
+
+.color-rgb {
+    color: rgb(100, 0, 200);
+}
+
+.color-rgba {
+    color: rgba(10, 10, 10, 0.2);
+}
