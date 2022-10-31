@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 86, 86);
+}
+
+#main-header {
+    background-color: rgb(247, 249, 249);
+}
+
+#saludo {
+    background-color:aliceblue;
+    font-size: 16pt;
+}
+
+#main-header hgroup h1 {
+    color:steelblue;
+    font-size: 40pt;
+}
+
+#main-header hgroup h2 {
+    color: cadetblue;
+    font-size: 16pt;
+}
+
+header nav {
+    background-color: olivedrab;
+    color:gainsboro;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+#left-aside {    
+    background-color:darkgrey;
+    color: rgb(88, 86, 86);
+}
+
+#left-aside li {
+    font-size: 10pt;
+    color: aliceblue;
+}
+
+section {
+    background-color: darkolivegreen;
+    color: whitesmoke;
+}
+
+article {
+    background-color: whitesmoke;
+}
+
+.article-header {
+    color: black;
+}
+
+.article-header p {
+    font-size: 8pt;
+}
+
+article p {
+    color: rgb(41, 40, 40);
+}
+
+footer {
+    background-color: whitesmoke;
+    color: cadetblue;
+}
