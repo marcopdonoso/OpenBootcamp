@@ -1,38 +1,76 @@
 body {
     background-image: url("https://qph.cf2.quoracdn.net/main-qimg-9649986002cc67e05789121d49b3529e-lq");
+    background-size: cover;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
 
 #main-header {
     background-color: #1B4079;
+    border-style: solid;
+    border-color: #7F9C96;
+    border-radius: 15px;
+    border-width: 5px;
 }
 
 #saludo {
     background-color:#7F9C96;
     font-size: 16pt;
+    margin-top: 0;;
 }
 
 #main-header hgroup h1 {
     color:whitesmoke;
     font-size: 40pt;
+    margin: 10px 0;
+    text-align: center;
+    height: 100px;
 }
 
 #main-header hgroup h2 {
-    color: whitesmoke;
+    color:#CBDF90;
     font-size: 16pt;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 3px;
 }
 
 header nav {
     background-color: #8FAD88;
-    color:black;
+    color:dimgray;
     font-size: 10pt;
     text-transform: uppercase;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: #CBDF90;
+    border-radius: 5px;
+}
+
+header nav ul {
+    margin: 0;
+    display:flex;
+    flex-direction: row;
+}
+
+header nav li {
+    margin: 0px 40px;
+    padding: 8px;
 }
 
 #left-aside {    
     background-color:#CBDF90;
     color: black;
+    width: 200px;
+    height: 300px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #7F9C96;
+    border-radius: 15px;
+    border-width: 5px;
 }
 
 #left-aside li {
@@ -43,25 +81,67 @@ header nav {
 section {
     background-color: #8FAD88;
     color: black;
+    height: 300px;
+    width: 400px;
+    border-style: solid;
+    border-color: #7F9C96;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+section h2 {
+    font-size: 20px;
 }
 
 article {
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .article-header {
     color: black;
 }
 
+.article-header h3 {
+    font-size: 15px;
+}
+
+.article-header h4 {
+    font-size: 12px;
+}
+
 .article-header p {
-    font-size: 8pt;
+    font-size: 8px;
 }
 
 article p {
     color: black;
+    font-size: 12px;
+}
+
+.articulo figure {
+    margin: 0;
+    height: 100px;
+}
+
+.articulo figcaption {
+    font-size: 8px;
+}
+
+.articulo img {
+    height: 80px;
+    width: 105px;
 }
 
 footer {
     background-color: #7F9C96;
     color: whitesmoke;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #7F9C96;
+}
+
+footer address {
+    font-size: 10px;
 }
