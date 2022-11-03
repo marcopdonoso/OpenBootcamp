@@ -10,10 +10,10 @@ body {
 
 #main-header {
     background-color: #1B4079;
-    border-style: solid;
-    border-color: #7F9C96;
+    border: 5px solid #7F9C96;
     border-radius: 15px;
-    border-width: 5px;
+    box-shadow: dimgray 3px 3px 5px;
+    margin-bottom: 10px;
 }
 
 #saludo {
@@ -28,6 +28,7 @@ body {
     font-size: 40pt;
     font-weight: lighter;
     text-align: center;
+    text-shadow: black 3px 3px 5px;
 }
 
 #main-header hgroup h2 {
@@ -43,9 +44,12 @@ header nav {
     font-size: 8pt;
     font-weight: 600;
     text-transform: uppercase;
-    border-style: solid;
-    border-color: #CBDF90;
-    border-radius: 5px;
+    text-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 header nav li {
@@ -54,28 +58,30 @@ header nav li {
 }
 
 #left-aside {    
+    padding: 0px 10px;
     background-color:#CBDF90;
     float: left;
-    color: black;
-    border-style: solid;
-    border-color: #7F9C96;
+    height: 450px;
+    border: 5px solid #7F9C96;
     border-radius: 15px;
-    border-width: 5px;
+    box-shadow: dimgray 3px 3px 5px;
     font-size: 12pt;
     font-weight: bolder;
 }
 
 #left-aside li {
     font-weight: lighter;
+    font-size: 10pt;
 }
 
 section {
     background-color: #8FAD88;
     margin-left: 190px;
-    border-style: solid;
-    border-color: #7F9C96;
+    padding-left: 15px;
+    padding-top: 15px;
+    border: 5px solid #7F9C96;
     border-radius: 15px;
-    border-width: 5px;
+    box-shadow: dimgray 3px 3px 5px;
 }
 
 section h2 {
@@ -121,10 +127,11 @@ article p {
 footer {
     background-color: #7F9C96;
     color: whitesmoke;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 5px;
-    border-color: #7F9C96;
+    clear:both;
+    margin-top: 30px;
+    border: 5px solid #7F9C96;
+    border-radius: 15px;
+    box-shadow: dimgray 3px 3px 5px;
 }
 
 footer address {
