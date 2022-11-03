@@ -9,11 +9,12 @@ body {
 }
 
 #main-header {
-    background-color: #1B4079;
+    /* background-color: #1B4079; */
     border: 5px solid #7F9C96;
     border-radius: 15px;
     box-shadow: dimgray 3px 3px 5px;
     margin-bottom: 10px;
+    background:-webkit-linear-gradient(left,#8FAD88,#CBDF90);
 }
 
 #saludo {
@@ -59,7 +60,7 @@ header nav li {
 
 #left-aside {    
     padding: 0px 10px;
-    background-color:#CBDF90;
+    background-color:#8FAD88;
     float: left;
     height: 450px;
     border: 5px solid #7F9C96;
