@@ -21,17 +21,13 @@ body {
     font-size: 16pt;
     font-weight: normal;
     font-style: italic;
-    margin-top: 0;;
 }
 
 #main-header hgroup h1 {
     color:whitesmoke;
     font-size: 40pt;
     font-weight: lighter;
-    margin: 0;
-    margin-top: 40px;
     text-align: center;
-    height: 100px;
 }
 
 #main-header hgroup h2 {
@@ -39,7 +35,6 @@ body {
     font-size: 13pt;
     font-weight: lighter;
     font-style: italic;
-    margin: 0 0 15px 10px;
 }
 
 header nav {
@@ -48,9 +43,6 @@ header nav {
     font-size: 8pt;
     font-weight: 600;
     text-transform: uppercase;
-    height: 30px;
-    margin: 0;
-    padding: 0;
     border-style: solid;
     border-color: #CBDF90;
     border-radius: 5px;
@@ -65,10 +57,6 @@ header nav li {
     background-color:#CBDF90;
     float: left;
     color: black;
-    width: 200px;
-    height: 400px;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
     border-style: solid;
     border-color: #7F9C96;
     border-radius: 15px;
@@ -83,9 +71,7 @@ header nav li {
 
 section {
     background-color: #8FAD88;
-    color: black;
-    height: 300px;
-    width: 400px;
+    margin-left: 190px;
     border-style: solid;
     border-color: #7F9C96;
     border-radius: 15px;
@@ -122,27 +108,17 @@ article p {
     font-size: 8pt;
 }
 
-.articulo figure {
-    margin: 0;
-    height: 100px;
-}
-
 .articulo figcaption {
     font-size: 6pt;
 }
 
 .articulo img {
-    margin: 0;
-    padding: 0;
     border-color: #1B4079;
     border-style: solid;
     border-radius: 3px;
-    height: 80px;
-    width: 105px;
 }
 
 footer {
-    margin-top: 20px;
     background-color: #7F9C96;
     color: whitesmoke;
     border-style: solid;
