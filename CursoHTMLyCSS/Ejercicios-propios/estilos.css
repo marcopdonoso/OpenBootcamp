@@ -14,7 +14,7 @@ body {
     border-radius: 15px;
     box-shadow: dimgray 3px 3px 5px;
     margin-bottom: 10px;
-    background:-webkit-linear-gradient(left,#8FAD88,#CBDF90);
+    background:-webkit-radial-gradient(center, ellipse, #8FAD88,whitesmoke);
 }
 
 #saludo {
