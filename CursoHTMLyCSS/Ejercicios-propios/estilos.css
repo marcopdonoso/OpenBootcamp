@@ -33,7 +33,7 @@ body {
 }
 
 #main-header hgroup h2 {
-    color:#CBDF90;
+    color: dimgray;
     font-size: 13pt;
     font-weight: lighter;
     font-style: italic;
@@ -70,16 +70,19 @@ header nav li {
     font-weight: bolder;
 }
 
+#left-aside li:hover {
+    transform: scale(1.02);
+}
+
 #left-aside li {
     font-weight: lighter;
     font-size: 10pt;
+    transition: 0.8s ease 0s;
 }
 
 section {
     background-color: #8FAD88;
     margin-left: 190px;
-    padding-left: 15px;
-    padding-top: 15px;
     border: 5px solid #7F9C96;
     border-radius: 15px;
     box-shadow: dimgray 3px 3px 5px;
@@ -92,14 +95,20 @@ section h2 {
 article {
     background-color: whitesmoke;
     border-radius: 5px;
+    padding-left: 5px;
 }
 
 .article-header {
     color: black;
 }
 
+.article-header h3:hover {
+    transform: scale(1.02);
+}
+
 .article-header h3 {
     font-size: 10pt;
+    transition: 1s ease 0s;
 }
 
 .article-header h4 {
@@ -117,6 +126,7 @@ article p {
 
 .articulo figcaption {
     font-size: 6pt;
+    color: black;
 }
 
 .articulo img {
@@ -138,3 +148,12 @@ footer {
 footer address {
     font-size: 10px;
 }
+
+.articulo img:hover {
+    transform: scale(1.05)
+}
+
+.articulo img {
+    transition: 0.8s ease 0s;
+}
+
