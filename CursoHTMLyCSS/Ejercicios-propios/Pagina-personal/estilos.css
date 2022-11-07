@@ -69,6 +69,7 @@ nav li {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 
 #left-aside {
@@ -97,26 +98,34 @@ main {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
     background-color: #8FAD88;
     margin-left: 10px;
     border: 5px solid #7F9C96;
     border-radius: 15px;
     box-shadow: dimgray 3px 3px 5px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 section h2 {
     font-size: 14pt;
     text-align: center;
+    margin: 3px 5px;
 }
 
 article {
+    margin: 3px 5px;
     background-color: whitesmoke;
     border-radius: 5px;
-    padding-left: 5px;
 }
 
 .article-header {
+    background-color: rgba(0, 0, 0, 10%);
     color: black;
+    padding: 5px 10px;
 }
 
 .article-header h3:hover {
@@ -124,6 +133,7 @@ article {
 }
 
 .article-header h3 {
+    margin: 0px;
     font-size: 10pt;
     transition: 1s ease 0s;
 }
@@ -133,7 +143,8 @@ article {
 }
 
 .article-header p {
-    font-size: 6pt;
+    margin: 0;
+    font-size: 8pt;
 }
 
 article p {
@@ -142,10 +153,10 @@ article p {
 }
 
 .articulo figcaption {
-    font-size: 6pt;
+    text-align: center;
+    font-size: 8pt;
     color: black;
     margin: 2px auto;
-    width: 140px;
 }
 
 .articulo img {
