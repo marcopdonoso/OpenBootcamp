@@ -90,6 +90,7 @@ section {
 
 section h2 {
     font-size: 14pt;
+    text-align: center;
 }
 
 article {
@@ -127,26 +128,36 @@ article p {
 .articulo figcaption {
     font-size: 6pt;
     color: black;
+    margin: 2px auto;
+    width: 140px;
 }
 
 .articulo img {
     border-color: #1B4079;
     border-style: solid;
     border-radius: 3px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
     background-color: #7F9C96;
     color: whitesmoke;
     clear:both;
-    margin-top: 30px;
+    margin-top: 50px;
     border: 5px solid #7F9C96;
     border-radius: 15px;
     box-shadow: dimgray 3px 3px 5px;
 }
 
+footer small {
+    display: block;
+    text-align: center;
+}
+
 footer address {
     font-size: 10px;
+    text-align: center;
 }
 
 .articulo img:hover {
