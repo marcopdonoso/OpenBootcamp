@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Source Code Pro', monospace;
+}
+
+header h1,h2 {
+    font-weight: bolder;
+    text-align: center;
+    transition: 1s ease 0s;
+}
+
+header h1:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-in-gallery {
+    width: 300px;
+    opacity: 0.5;
+    transition: 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+.image-in-gallery:hover {
+    opacity: 1;
+    scale: 1.02;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: lighter;
+}
