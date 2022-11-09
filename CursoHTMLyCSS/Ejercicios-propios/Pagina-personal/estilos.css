@@ -61,6 +61,7 @@ nav ul {
 }
 
 nav li {
+    cursor: pointer;
     display: flex;
     align-items: center;
     color: whitesmoke;
@@ -76,7 +77,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 150px;
+    width: 250px;
     padding: 0px 10px;
     background-color:#8FAD88;
     float: left;
@@ -87,14 +88,28 @@ main {
     font-weight: bolder;
 }
 
-#left-aside li:hover {
-    transform: scale(1.02);
+#left-aside ul {
+    padding: 0;
+    list-style: none;
 }
 
-#left-aside li {
+#left-aside a:link {
+    color: white;
     font-weight: lighter;
     font-size: 10pt;
-    transition: 0.8s ease 0s;
+    transition: 0.2s ease 0s;
+}
+
+#left-aside a:visited {
+    color: white;
+}
+
+#left-aside a:hover {
+    color: gainsboro;
+}
+
+#left-aside a:active {
+    color: white;
 }
 
 section {
