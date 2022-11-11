@@ -131,7 +131,7 @@ section h2 {
     margin: 3px 5px;
 }
 
-article {
+.articulo {
     margin: 3px 5px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -162,9 +162,17 @@ article {
     font-size: 8pt;
 }
 
-article p {
+.articulo p {
     color: black;
     font-size: 8pt;
+}
+
+.articulo .article-paragraph {
+    padding: 0 10px;
+}
+
+.articulo .article-paragraph::first-letter {
+    font-size: 18pt;
 }
 
 .articulo figcaption {
