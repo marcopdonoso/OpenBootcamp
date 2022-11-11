@@ -1,0 +1,20 @@
+/* Id (1,0,0) */
+/* Clase (0,1,0) */
+/* Etiqueta (0,0,1) */
+/* (0,0,0) */
+
+h1#h1-id.h1-clase {
+    color: greenyellow;
+}
+
+.h1-clase {
+    color: yellow;
+}
+
+h1 {
+    color: blue !important;
+}
+
+p {
+    color: red;
+}
