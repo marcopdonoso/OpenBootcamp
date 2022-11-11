@@ -1,0 +1,13 @@
+button span:hover {
+    color: white;
+    background-color: green;
+}
+
+button span {
+    visibility: hidden;
+}
+
+button span::before {
+    content: "Hecho!";
+    visibility: visible;
+}
